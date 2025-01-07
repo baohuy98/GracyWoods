@@ -1,6 +1,6 @@
 
 import React from "react";
-import Circular from "../../components/Circular";
+import Circular from "../../components/CircularTimeline";
 
 
 
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
       <div className="circular relative flex justify-between h-full  items-center bg-circular bg-no-repeat bg-cover bg-center  ">
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm z-0"></div>
-        <div className="circular_left w-[10%] flex flex-col items-center  ">
+        <div className="circular_left w-fit   ">
           <Circular />
         </div>
         <div className="circular_right w-[50%] text-white z-10 ">
@@ -36,7 +36,12 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="carousel">
+      <div className="carousel_container relative">
+        <h2>LOCATIONS</h2>
+
+        <div className="carousel ">
+
+        </div>
 
       </div>
     </div>
