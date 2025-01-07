@@ -6,7 +6,6 @@ import Circular from "../../components/CircularTimeline";
 
 
 
-
 const Home: React.FC = () => {
   return (
     <div className=" h-[700px]  ">
@@ -14,24 +13,24 @@ const Home: React.FC = () => {
         <h1 className="text-white font-semibold text-[25px]">TIMELINE</h1>
       </div>
 
-      <div className="circular relative flex justify-between h-full  items-center bg-circular bg-no-repeat bg-cover bg-center  ">
+      <div className="circular relative flex justify-center  items-center   h-full bg-circular bg-no-repeat bg-cover bg-center  ">
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm z-0"></div>
-        <div className="circular_left w-fit   ">
+        <div className="circular_left w-fit translate-x-[-460px]    ">
           <Circular />
         </div>
-        <div className="circular_right w-[50%] text-white z-10 ">
-          <h1>Golgarian War</h1>
-          <p>
-            Vega Cho Hun Gan I expands his direct rule over Golgarian requests more power over Karawoodand Ambros
+        <div className="circular_right w-[50%] h-[400px] flex flex-col justify-between  text-white z-10 ">
+          <h1 className="font-semibold text-[25px] ">Golgarian War</h1>
+          <p className="text-[17px]  leading-[25px]">
+            Vega Cho Hun Gan I expands his direct rule <br></br> over Golgarian requests more power over<br></br> Karawoodand Ambros
           </p>
 
-          <p>
-            Tera Alexandria and LusasLE Vunresist Vega's expansion and declare war on the Sages
+          <p className="text-[17px] leading-[25px] ">
+            Tera Alexandria and LusasLE Vunresist Vega's<br></br>expansion and declare war on the Sages
           </p>
 
-          <p>
-            Kruk and the Cretans remain neutral and act as an intermediary within the conflict.
-            Garousbegin to appear on the islands of Kyreenin large numbers.
+          <p className="text-[17px] leading-[25px] ">
+            Kruk and the Cretans remain neutral and act<br></br> as an intermediary within the conflict.<br></br>
+            Garousbegin to appear on the islands of<br></br> Kyreenin large numbers.
           </p>
         </div>
       </div>
@@ -39,7 +38,7 @@ const Home: React.FC = () => {
       <div className="carousel_container relative">
         <h2>LOCATIONS</h2>
 
-        <div className="carousel ">
+        <div className="carousel w-full h-[800px] ">
 
         </div>
 
