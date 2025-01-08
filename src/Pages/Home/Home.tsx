@@ -1,19 +1,25 @@
 
 import React from "react";
 import Circular from "../../components/CircularTimeline";
-
+import Carousel from "../../components/Carousel";
+import curve from '../../utils/asset/curve.png'
 
 
 
 
 const Home: React.FC = () => {
+
+
+
+
+
   return (
-    <div className=" h-[700px]  ">
-      <div className="header_timeLine h-[100px] border-b-[5px] border-[#e9e9e3] px-[40px] py-[20px] ">
+    <div className="   ">
+      <div className="header_timeLine h-[100px] border-b-[5px] border-[#e9e9e3] px-[40px] py-[20px] bg-[#242424] ">
         <h1 className="text-white font-semibold text-[25px]">TIMELINE</h1>
       </div>
 
-      <div className="circular relative flex justify-center  items-center   h-full bg-circular bg-no-repeat bg-cover bg-center  ">
+      <div className="circular relative flex justify-center  items-center   h-screen bg-circular bg-no-repeat bg-cover bg-center  ">
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm z-0"></div>
         <div className="circular_left w-fit translate-x-[-460px]    ">
           <Circular />
@@ -35,11 +41,14 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="carousel_container relative">
-        <h2>LOCATIONS</h2>
+      <div className="carousel_container relative h-screen bg-[#242424] z-0">
 
-        <div className="carousel w-full h-[800px] ">
+        <div className="carousel_title h-[100px]  px-[40px] py-[20px] ">
+          <h1 className="text-white font-semibold text-[25px]">LOCATIONS</h1>
+        </div>
 
+        <div className="carousel ">
+          <Carousel />
         </div>
 
       </div>
