@@ -1,15 +1,14 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Circular from "../../components/CircularTimeline";
 import Carousel from "../../components/Carousel";
 import curve from '../../utils/asset/curve.png'
+import Modal from "../../components/Modal";
 
 
 
 
 const Home: React.FC = () => {
-
-
 
 
 
@@ -42,11 +41,6 @@ const Home: React.FC = () => {
       </div>
 
       <div className="carousel_container relative h-screen bg-[#242424] z-0">
-
-        <div className="carousel_title h-[100px]  px-[40px] py-[20px] ">
-          <h1 className="text-white font-semibold text-[25px]">LOCATIONS</h1>
-        </div>
-
         <div className="carousel ">
           <Carousel />
         </div>

@@ -29,7 +29,7 @@ const CircularTimeline = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center m">
             <div className="relative">
                 <div
                     className="relative w-[600px] h-[600px] z-2 rounded-full border-[8px] border-white flex items-center justify-center"
