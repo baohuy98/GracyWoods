@@ -1,6 +1,14 @@
 import React, { useState } from "react"
 
-const CircularTimeline = () => {
+export interface CircularTimelineProps {
+    handleChangeBackDrop: (index: number) => void
+}
+
+
+
+
+
+const CircularTimeline: React.FC<CircularTimelineProps> = ({ handleChangeBackDrop }) => {
     const items = [
         { id: 0, label: "3311 R.G.E" },
         { id: 1, label: "3312 R.G.E" },
@@ -14,6 +22,7 @@ const CircularTimeline = () => {
     const [rotation, setRotation] = useState<number>(0)
 
     const handleClick = (index: number) => {
+        handleChangeBackDrop(index + 1)
         const anglePerItem = 180 / (items.length - 1)
         const currentAngle = -90 + anglePerItem * index
         let newRotation = -currentAngle
